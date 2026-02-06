@@ -7,9 +7,9 @@ h1 {
 .navbar {
     background-color: rgb(131, 24, 31);
     padding: 2vw;
-    padding-left: 3vw;
-    padding-right: 3vw;  
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3vw;
 }
@@ -28,4 +28,70 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+}
+
+.details-header {
+    background-color: rgb(175, 175, 175);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-header a {
+    color: white;
+    text-decoration: none;
+    padding: 1vw;
+    background-color: rgb(131, 24, 31);
+    border-radius: 0.2vw;
+    margin-left: 1vw;
+}
+
+.backbutton {
+    text-align: left;
+}
+
+.details-pagetitle {
+    text-align: center;
+    font-size: 1.7vw;
+    margin-right: 9vw;
+}
+
+.details-header p .details-header .empty {
+    flex: 1;
+}
+
+.property-details {
+    background-color: #ffffff;
+    padding: 2vw;
+    margin: auto;
+    max-width: 70%;
+}
+.details-text {
+    vertical-align: top;
+}
+.details-image {
+    width: 40%;
+    border-radius: 0.5vw;
+    text-align: right;
+}
+.header {
+    background-color: rgb(175, 175, 175);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.pagetitle{
+    text-align: center;
+    font-size: 1.7vw;
+}
+
+.search-bar {
+    margin: 1vw auto;
+    padding: 1vw;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
 }
