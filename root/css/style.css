@@ -1,69 +1,50 @@
-h1 {
-    color: #333333;
-    font-family: Arial, sans-serif;
-    text-align: center;
-}
-
 .navbar {
     background-color: rgb(131, 24, 31);
-    padding: 2vw;
+    padding: 1vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Lora", serif;
-    font-size: 1.3vw;
+    font-family: "Inter", sans-serif;
+    font-size: 1.6vw;
 }
 .navbar a {
     margin: 0 3vw;
     text-decoration: none;
     color: #ffffff;
+    width: fit-content;
 }
 .navbar a:hover {
     text-decoration: underline;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-.details-header {
-    background-color: rgb(175, 175, 175);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.details-header a {
+.button {
     color: white;
     text-decoration: none;
-    padding: 1vw;
+    padding: 0.5vw;
     background-color: rgb(131, 24, 31);
-    border-radius: 0.2vw;
-    margin-left: 1vw;
+    border-radius: 0.17vw;
 }
 
-.backbutton {
-    text-align: left;
-}
-
-.details-pagetitle {
-    text-align: center;
-    font-size: 1.7vw;
-    margin-right: 9vw;
-}
-
-.details-header p .details-header .empty {
-    flex: 1;
+#homepagebutton {
+    font-size: 1.5vw;
+    padding: 1vw 2vw;
+    width: fit-content;
+    display: flex;
+    margin: 0 auto;
 }
 
 .property-details {
     background-color: #ffffff;
     padding: 2vw;
     margin: auto;
+    margin-top: 2vw;
     max-width: 70%;
 }
 .details-text {
@@ -81,18 +62,12 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 3vw;
 }
 .pagetitle{
     text-align: center;
-    font-size: 1.7vw;
-}
-
-.search-bar {
-    margin: 1vw auto;
-    padding: 1vw;
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
+    font-size: 1.3vw;
+    margin: 0.6vw;
 }
 
 .listings {
@@ -114,7 +89,7 @@ body {
 }
 
 .listing {
-    font-family: Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: rgb(131, 24, 31);
 }
@@ -123,4 +98,89 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+.image-carousel {
+    position: relative;
+    max-width: 450px;      
+    margin: 0 auto;
+}
+
+.image-carousel img {
+    width: 100%;
+    height: 320px;         
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+
+.carousel-slide {
+    display: none;
+}
+
+
+#slide1:checked ~ .slide1,
+#slide2:checked ~ .slide2,
+#slide3:checked ~ .slide3 {
+    display: block;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.carousel-dots label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 50%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.carousel-dots label:hover {
+    background: #999;
+}
+
+
+.image-carousel input[type="radio"] {
+    display: none;
+}
+
+.logo {
+    width: auto;
+    height: 2.5vw;
+}
+
+.home-image {
+    background-image: url('../assets/images/homepage/homepage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.home-image h1 {
+    font-size: 3vw;
+    margin-bottom: 2vw;
+    color: #ffffff;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 2vw;
+    background-color: #ffffff;
+    padding: 4vw;
+}
+
+.contact-section span {
+    display: block;
+    font-size: 1.5vw;
+    margin-bottom: 1vw;
 }
