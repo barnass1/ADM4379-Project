@@ -184,3 +184,68 @@ body {
     font-size: 1.5vw;
     margin-bottom: 1vw;
 }
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        font-size: 7vw;
+    }
+    .navbar a {
+        margin: 1vw 0;
+    }
+    .logo {
+        height: 8vw;
+    }
+    #homepagebutton {
+        font-size: 3vw;
+        padding: 2vw 4vw;
+    }
+    .home-image h1 {
+        font-size: 7vw;
+        text-align: center;
+        margin-left: 8vw;
+        margin-right: 8vw;
+    }
+    .home-image {
+        height: 40vh;
+    }
+    .header {
+        height: auto;
+        padding: 1vw;
+    }
+    .pagetitle{
+        font-size: 3vw;
+    }
+    .listings td {
+        display: block;
+        width: auto;
+        padding: 4vw;
+    }
+    .listings tr {
+        display: block;
+    }
+    .property-details,
+    .property-details tbody,
+    .property-details tr {
+    display: block;
+    width: 100%;
+  }
+
+    .property-details td {
+    display: block;
+    width: 100%;
+  }
+  .property-details {
+    margin: 0;
+    max-width: 100%;
+    padding-top: 4vw;
+  }
+  .button {
+    font-size: 4vw;
+    padding: 2vw 4vw;
+    border-radius: 0.5vw;
+  }
+  .contact-section span {
+    font-size: 6vw;
+  }
+}
