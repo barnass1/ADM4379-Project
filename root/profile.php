@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
+    <title>Profile - Student Housing Platform</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="../index.php"><img src="../root/assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
+        <a href="../listings/listings.php">Listings</a>
+        <a href="../auth/login.html">Login</a>
+    </div>
+    <h1>Profile</h1>
+    <p>Welcome *name*</p>
+    <p>Email: *email address*</p>
+    <a href="profile-settings.php">Edit Profile Settings</a>
+
+    <h2>My listings</h2>
+    <ul>
+        <li>Listing 1: Cozy apartment near campus <a href="listings/manage-listings.php">Details</a></li>
+    </ul>
+
+    
+</body>
+
+</html>

@@ -11,25 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assets/icons/favicon.ico" type="image/x-icon">
-    <title>Profile - Student Housing Platform</title>
+    <title>Profile Settings - Student Housing Platform</title>
 </head>
 
 <body>
     <div class="navbar">
-        <a href="../index.html"><img src="../root/assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
-        <a href="../listings/listings.html">Listings</a>
+        <a href="../index.php"><img src="../root/assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
+        <a href="../listings/listings.php">Listings</a>
         <a href="../auth/login.html">Login</a>
     </div>
-    <h1>Profile</h1>
-    <p>Welcome *name*</p>
-    <p>Email: *email address*</p>
-    <a href="profile-settings.html">Edit Profile Settings</a>
-
-    <h2>My listings</h2>
-    <ul>
-        <li>Listing 1: Cozy apartment near campus <a href="listings/manage-listings.html">Details</a></li>
-    </ul>
-
+    <h1>Profile Settings</h1>
+    <form action="/profile/settings" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">New Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <button type="submit">Update Settings</button>
+    </form>
     
 </body>
 

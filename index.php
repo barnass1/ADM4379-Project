@@ -16,14 +16,14 @@
 
 <body>
     <div class="navbar">
-        <a href=""><img src="root/assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
-        <a href="root/listings/listings.html">Listings</a>
+        <a href="index.php"><img src="root/assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
+        <a href="root/listings/listings.php">Listings</a>
         <a href="root/auth/login.html">Login</a>
     </div>
     
     <div class="home-image">
         <h1>Welcome to the Student Housing Platform</h1>
-        <a href="root/listings/listings.html" class="button" id="homepagebutton">See listings</a>
+        <a href="root/listings/listings.php" class="button" id="homepagebutton">See listings</a>
     </div>
     
 

@@ -16,8 +16,8 @@
 
 <body>
     <div class="navbar">
-        <a href="../../index.html"><img src="../assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
-        <a href="../listings/listings.html">Listings</a>
+        <a href="../../index.php"><img src="../assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
+        <a href="../listings/listings.php">Listings</a>
         <a href="../auth/login.html">Login</a>
     </div>
     <div class="header">
@@ -36,36 +36,6 @@
                     <li>Mandatory Meal Plan: 5 Day</li>
                     <li>Agreement Length: 4 months</li>
                     <li>$5,804/term + 5 Day Meal Plan</li>
-                    <li>Available from 2026.01.05</li>
-                </ul>
-                </a>
-            </td>
-            <td>
-                <a href="../listings/property-details-res2double.html" class="listing">
-                    <ul class="ul-listing">
-                    <li class="listing-image"><img src="../assets/images/mrd-double/mrd-dbl-bedroom-double-3.jpg" alt="Inside a Marchand Residence room"></li>
-                    <li>Double room on the 10th floor</li>
-                    <li>On campus</li>
-                    <li>Marchand Residence</li>
-                    <li>Room Type: Traditional Double room</li>
-                    <li>Mandatory Meal Plan: 5 Day</li>
-                    <li>Agreement Length: 4 months</li>
-                    <li>$4,619/term + 5 Day Meal Plan</li>
-                    <li>Available from 2026.01.05</li>
-                </ul>
-                </a>
-            </td>
-            <td>
-                <a href="../listings/property-details-res3double.html" class="listing">
-                    <ul class="ul-listing">
-                    <li class="listing-image"><img src="../assets/images/ninety-u/ninety-u-2bdrm-bedroom1-single-2.jpg" alt="Inside a 90U bedroom"></li>
-                    <li>Quiet room on the 5th floor</li>
-                    <li>On campus</li>
-                    <li>90U Residence</li>
-                    <li>Room Type: Suite</li>
-                    <li>Mandatory Meal Plan: 5 Day</li>
-                    <li>Agreement Length: 4 months</li>
-                    <li>$7,744/term + 5 Day Meal Plan</li>
                     <li>Available from 2026.01.05</li>
                 </ul>
                 </a>
