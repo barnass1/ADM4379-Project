@@ -11,25 +11,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
-    <title>New Listing - Student Housing Platform</title>
+    <title>Register - Student Housing Platform</title>
 </head>
 
 <body>
     <div class="navbar">
         <a href="../../index.php"><img src="../assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
         <a href="../listings/listings.php">Listings</a>
-        <a href="../auth/login.html">Login</a>
+        <a href="../auth/login.php">Login</a>
     </div>
-    <h1>Student Housing Platform</h1>
-    <form action="/listings/create" method="post">
-        <label for="title">Listing Title:</label>
-        <input type="text" id="title" name="title" required><br><br>
-        <label for="description">Description:</label><br>
-        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
-        <label for="price">Price per Month:</label>
-        <input type="number" id="price" name="price" required><br><br>
-        <button type="submit">Create Listing</button>
+    <h1>Register</h1>
+    <form action="register_handler.php" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Register</button>
     </form>
+    <div>
+        <p>Already have an account? <a href="login.php">Login here</a>.</p>
+    </div>
 </body>
 
 </html>

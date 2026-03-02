@@ -11,27 +11,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
-    <title>Register - Student Housing Platform</title>
+    <title>Login - Student Housing Platform</title>
 </head>
 
 <body>
     <div class="navbar">
         <a href="../../index.php"><img src="../assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
         <a href="../listings/listings.php">Listings</a>
-        <a href="../auth/login.html">Login</a>
+        <a href="../auth/login.php">Login</a>
     </div>
-    <h1>Register</h1>
-    <form action="" method="POST">
+    <h1>Login</h1>
+    <form action="login_handler.php" method="POST">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required><br><br>
-        <button type="submit">Register</button>
+        <button type="submit">Login</button>
     </form>
     <div>
-        <p>Already have an account? <a href="login.html">Login here</a>.</p>
+        <p>Don't have an account? <a href="register.php">Register here</a>.</p>
     </div>
 </body>
 

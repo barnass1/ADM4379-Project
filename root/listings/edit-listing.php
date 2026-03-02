@@ -18,10 +18,10 @@
     <div class="navbar">
         <a href="../../index.php"><img src="../assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
         <a href="../listings/listings.php">Listings</a>
-        <a href="../auth/login.html">Login</a>
+        <a href="../auth/login.php">Login</a>
     </div>
     <h1>Edit Listing</h1>
-    <form action="/listings/edit" method="post">
+    <form action="edit-handler.php" method="post">
         <label for="title">Listing Title:</label>
         <input type="text" id="title" name="title" value="Cozy apartment near campus" required><br><br>
         <label for="description">Description:</label><br>

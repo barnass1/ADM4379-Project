@@ -18,10 +18,10 @@
     <div class="navbar">
         <a href="../index.php"><img src="../root/assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
         <a href="../listings/listings.php">Listings</a>
-        <a href="../auth/login.html">Login</a>
+        <a href="../auth/login.php">Login</a>
     </div>
     <h1>Profile Settings</h1>
-    <form action="/profile/settings" method="POST">
+    <form action="profile-settings-handler.php" method="POST">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required><br><br>
         <label for="password">New Password:</label>

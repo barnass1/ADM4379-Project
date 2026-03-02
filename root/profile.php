@@ -18,12 +18,13 @@
     <div class="navbar">
         <a href="../index.php"><img src="../root/assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
         <a href="../listings/listings.php">Listings</a>
-        <a href="../auth/login.html">Login</a>
+        <a href="../auth/login.php">Login</a>
     </div>
     <h1>Profile</h1>
     <p>Welcome *name*</p>
     <p>Email: *email address*</p>
     <a href="profile-settings.php">Edit Profile Settings</a>
+    <a href="profile-delete.php">Delete Profile</a>
 
     <h2>My listings</h2>
     <ul>

@@ -18,13 +18,13 @@
     <div class="navbar">
         <a href="../../index.php"><img src="../assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
         <a href="../listings/listings.php">Listings</a>
-        <a href="../auth/login.html">Login</a>
+        <a href="../auth/login.php">Login</a>
     </div>
     <h1>Manage Listing</h1>
     <h2>Cozy apartment near campus</h2>
     <p>Status: Active</p>
-    <p><a href="edit-listing.html">Edit Listing</a></p>
-    <p><a href="delete-listing.html">Delete Listing</a></p>
+    <p><a href="edit-listing.php">Edit Listing</a></p>
+    <p><a href="delete-listing.php">Delete Listing</a></p>
     
 </body>
 

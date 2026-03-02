@@ -18,7 +18,7 @@
     <div class="navbar">
         <a href="../index.php"><img src="../root/assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
         <a href="../listings/listings.php">Listings</a>
-        <a href="../auth/login.html">Login</a>
+        <a href="../auth/login.php">Login</a>
     </div>
      <div class="home-image">
         <h1>Oh no! Something went wrong.</h1>

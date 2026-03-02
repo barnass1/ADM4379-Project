@@ -18,7 +18,7 @@
     <div class="navbar">
         <a href="../../index.php"><img src="../assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
         <a href="../listings/listings.php">Listings</a>
-        <a href="../auth/login.html">Login</a>
+        <a href="../auth/login.php">Login</a>
     </div>
     <div class="header">
         <p class="pagetitle">Listings</p>
@@ -26,7 +26,7 @@
     <table class="listings">
         <tr>
             <td>
-                <a href="../listings/property-details-res1single.html" class="listing">
+                <a href="../listings/property-details-res1single.php" class="listing">
                     <ul class="ul-listing">
                     <li class="listing-image"><img src="../assets/images/mrd-single/mrd-sgl-bedroom-single.jpg" alt="Inside a Marchand Residence room"></li>
                     <li>Single room on the 2nd floor</li>
