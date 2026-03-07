@@ -23,25 +23,108 @@
     <div class="header">
         <p class="pagetitle">Listings</p>
     </div>
-    <table class="listings">
-        <tr>
-            <td>
-                <a href="../listings/property-details-res1single.php" class="listing">
-                    <ul class="ul-listing">
-                    <li class="listing-image"><img src="../assets/images/mrd-single/mrd-sgl-bedroom-single.jpg" alt="Inside a Marchand Residence room"></li>
-                    <li>Single room on the 2nd floor</li>
-                    <li>On campus</li>
-                    <li>Marchand Residence</li>
-                    <li>Room Type: Traditional Single room</li>
-                    <li>Mandatory Meal Plan: 5 Day</li>
-                    <li>Agreement Length: 4 months</li>
-                    <li>$5,804/term + 5 Day Meal Plan</li>
-                    <li>Available from 2026.01.05</li>
-                </ul>
-                </a>
-            </td>
-        </tr>
-    </table>
+    <div>
+        <?php
+        $db_host = '127.0.0.1'; $db_user = 'root'; $db_db = 'student_housing_platform';
+        // MAMP
+        $db_password = 'root'; $db_port = '8889';
+        $mysqli = new mysqli($db_host, $db_user, $db_password, $db_db, $db_port);
+        if ($mysqli->connect_error) {
+        echo 'Errno: '.$mysqli->connect_errno;
+        echo '<br>';
+        echo 'Error: '.$mysqli->connect_error;
+        exit();
+        }
+    ?>
+    <?php
+        $sql = "SELECT * FROM Listings ORDER BY CreatedAt DESC";
+        $result = $mysqli->query($sql);
+        ?>
+
+        <table class="listings">
+
+        <?php
+        if ($result && $result->num_rows > 0) {
+
+            $count = 0;
+
+            echo "<tr>";
+
+            while($row = $result->fetch_assoc()) {
+
+                if ($count > 0 && $count % 3 == 0) {
+                    echo "</tr><tr>";
+                }
+        ?>
+
+        <td>
+
+        <a href="../listings/property-details.php?id=<?php echo $row['ListingId']; ?>" class="listing">
+
+        <ul class="ul-listing">
+
+        <li class="listing-image">
+        <?php
+
+        $locationMap = [
+        "Marchand Residence" => "mrd",
+        "Thompson Residence" => "thn",
+        "Leblanc Residence" => "lbc",
+        "Henderson Residence" => "hsy",
+        "Annex" => "anx",
+        "90 University Residence" => "ninety-u"
+        ];
+
+        $prefix = $locationMap[$row['Location']] ?? "default";
+
+        $type = "single";
+
+        if (stripos($row['RoomType'], "double") !== false) {
+            $type = "double";
+        }
+
+        $folder = $prefix . "-" . $type;
+
+        if ($prefix == "ninety-u") {
+            $folder = $prefix;
+        }
+        ?>
+        
+        <img src="../assets/images/<?php echo $folder; ?>/<?php echo $prefix; ?>-first.jpg"
+        alt="<?php echo $row['Title']; ?>">
+
+        </li>
+
+        <li><?php echo $row['Title']; ?></li>
+        <li><?php echo $row['CampusType']; ?></li>
+        <li><?php echo $row['Location']; ?></li>
+
+        <li>Room Type: <?php echo $row['RoomType']; ?></li>
+
+        <li>Mandatory Meal Plan: <?php echo $row['MealPlan']; ?></li>
+
+        <li>Agreement Length: <?php echo $row['AgreementMonths']; ?> months</li>
+
+        <li>$<?php echo $row['Price']; ?>/<?php echo $row['PricePeriod']; ?></li>
+
+        <li>Available from <?php echo $row['AvailableFrom']; ?></li>
+
+        </ul>
+
+        </a>
+
+        </td>
+
+        <?php
+                $count++;
+            }
+
+            echo "</tr>";
+        }
+        ?>
+
+        </table>
+    </div>
     
 </body>
 

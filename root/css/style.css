@@ -185,6 +185,12 @@ body {
     margin-bottom: 1vw;
 }
 
+.latest-listings h2 {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 4vw;
+}
+
 @media screen and (max-width: 768px) {
     .navbar {
         flex-direction: column;
