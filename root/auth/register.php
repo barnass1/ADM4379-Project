@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+    <title>Register - Student Housing Platform</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="../../index.php"><img src="../assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
+        <a href="../listings/listings.php">Listings</a>
+        <a href="../auth/login.php">Login</a>
+    </div>
+    <div class="header">
+        <p class="pagetitle">Register</p>
+    </div>
+    <div class="login_register">
+        <?php
+        if (isset($_GET['error'])) {
+            echo '<div class="error-message">' . htmlspecialchars($_GET['error']) . '</div>';
+        }
+        ?>
+        <h1>Create your account</h1>
+        <form action="register_handler.php" method="POST">
+            <input type="text" name="firstname" placeholder="First name" required>
+            <input type="text" name="lastname" placeholder="Last name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <select name="usertype">
+                <option value="Student">Student</option>
+                <option value="Landlord">Landlord</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+        <p>Already have an account? <a href="login.php">Login here</a>.</p>
+    </div>
+    <div class="footer">
+        <table>
+            <tr>
+                <td><a href="login.php">Sign in</a></td>
+                <td><a href="https://uottawa.ca">University of Ottawa homepage</a></td>
+            </tr>
+            <tr>
+                <td><a href="register.php">Register</a></td>
+                <td><a href="https://housing.uottawa.ca">Housing Portal</a></td>
+            </tr>
+            <tr>
+                <td><a href="../listings/listings.php">View Listings</a></td>
+                <td><a href="https://www.uottawa.ca/campus-life/housing">Residence Information</a></td>
+            </tr>
+        </table>
+        <p>&copy; 2026 Student Housing Platform. All rights reserved.</p>
+    </div>
+</body>
+
+</html>
