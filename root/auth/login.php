@@ -35,7 +35,7 @@
         </form>
         <?php
         if (isset($_GET['error'])) {
-            echo '<div class="error-message">'.htmlspecialchars($_GET['error']).'</div>';
+            echo '<div class="error-message">' . htmlspecialchars($_GET['error']) . '</div>';
         }
         ?>
         <?php
@@ -43,7 +43,24 @@
             echo '<div class="success-message">Registration successful. Please log in.</div>';
         }
         ?>
-            <p>Don't have an account? <a href="register.php">Register here</a>.</p>
+        <p>Don't have an account? <a href="register.php">Register here</a>.</p>
+    </div>
+    <div class="footer">
+        <table>
+            <tr>
+                <td><a href="login.php">Sign in</a></td>
+                <td><a href="https://uottawa.ca">University of Ottawa homepage</a></td>
+            </tr>
+            <tr>
+                <td><a href="register.php">Register</a></td>
+                <td><a href="https://housing.uottawa.ca">Housing Portal</a></td>
+            </tr>
+            <tr>
+                <td><a href="../listings/listings.php">View Listings</a></td>
+                <td><a href="https://www.uottawa.ca/campus-life/housing">Residence Information</a></td>
+            </tr>
+        </table>
+        <p>&copy; 2026 Student Housing Platform. All rights reserved.</p>
     </div>
 </body>
 

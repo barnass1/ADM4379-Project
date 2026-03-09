@@ -16,26 +16,46 @@
 
 <body>
     <?php
-        session_start();
+    session_start();
     ?>
     <div class="navbar">
         <a href="../../index.php"><img src="../assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
         <a href="../listings/listings.php">Listings</a>
         <?php if (isset($_SESSION['user_id'])): ?>
-        <a href="../profile.php">
-            <?php echo htmlspecialchars($_SESSION['first_name'] . " " . $_SESSION['last_name']); ?>
-        </a>
-        <a href="../auth/logout.php">Logout</a>
+            <a href="../profile.php">
+                <?php echo htmlspecialchars($_SESSION['first_name'] . " " . $_SESSION['last_name']); ?>
+            </a>
+            <a href="../auth/logout.php">Logout</a>
         <?php else: ?>
-        <a href="../auth/login.php">Login</a>
+            <a href="../auth/login.php">Login</a>
         <?php endif; ?>
+    </div>
+    <div class="header">
+        <p class="pagetitle">Manage Listings</p>
     </div>
     <h1>Manage Listing</h1>
     <h2>Cozy apartment near campus</h2>
     <p>Status: Active</p>
     <p><a href="edit-listing.php">Edit Listing</a></p>
     <p><a href="delete-listing.php">Delete Listing</a></p>
-    
+    <div class="footer">
+        <table>
+            <tr>
+                <td><a href="../auth/login.php">Sign in</a></td>
+                <td><a href="https://uottawa.ca">University of Ottawa homepage</a></td>
+            </tr>
+            <tr>
+                <td><a href="../auth/register.php">Register</a></td>
+                <td><a href="https://housing.uottawa.ca">Housing Portal</a></td>
+            </tr>
+            <tr>
+                <td><a href="listings.php">View Listings</a></td>
+                <td><a href="https://www.uottawa.ca/campus-life/housing">Residence Information</a></td>
+            </tr>
+        </table>
+        <p>&copy; 2026 Student Housing Platform. All rights reserved.</p>
+    </div>
+
 </body>
 
 </html>

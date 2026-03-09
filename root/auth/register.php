@@ -27,7 +27,7 @@
         <?php
         if (isset($_GET['error'])) {
             echo '<div class="error-message">' . htmlspecialchars($_GET['error']) . '</div>';
-        }   
+        }
         ?>
         <h1>Create your account</h1>
         <form action="register_handler.php" method="POST">
@@ -36,12 +36,29 @@
             <input type="email" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Password" required>
             <select name="usertype">
-            <option value="Student">Student</option>
-            <option value="Landlord">Landlord</option>
+                <option value="Student">Student</option>
+                <option value="Landlord">Landlord</option>
             </select>
             <button type="submit">Register</button>
         </form>
         <p>Already have an account? <a href="login.php">Login here</a>.</p>
+    </div>
+    <div class="footer">
+        <table>
+            <tr>
+                <td><a href="login.php">Sign in</a></td>
+                <td><a href="https://uottawa.ca">University of Ottawa homepage</a></td>
+            </tr>
+            <tr>
+                <td><a href="register.php">Register</a></td>
+                <td><a href="https://housing.uottawa.ca">Housing Portal</a></td>
+            </tr>
+            <tr>
+                <td><a href="../listings/listings.php">View Listings</a></td>
+                <td><a href="https://www.uottawa.ca/campus-life/housing">Residence Information</a></td>
+            </tr>
+        </table>
+        <p>&copy; 2026 Student Housing Platform. All rights reserved.</p>
     </div>
 </body>
 
