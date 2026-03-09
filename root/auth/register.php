@@ -20,17 +20,27 @@
         <a href="../listings/listings.php">Listings</a>
         <a href="../auth/login.php">Login</a>
     </div>
-    <h1>Register</h1>
-    <form action="register_handler.php" method="POST">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required><br><br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required><br><br>
-        <button type="submit">Register</button>
-    </form>
-    <div>
+    <div class="header">
+        <p class="pagetitle">Register</p>
+    </div>
+    <div class="login_register">
+        <?php
+        if (isset($_GET['error'])) {
+            echo '<div class="error-message">' . htmlspecialchars($_GET['error']) . '</div>';
+        }   
+        ?>
+        <h1>Create your account</h1>
+        <form action="register_handler.php" method="POST">
+            <input type="text" name="firstname" placeholder="First name" required>
+            <input type="text" name="lastname" placeholder="Last name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <select name="usertype">
+            <option value="Student">Student</option>
+            <option value="Landlord">Landlord</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
         <p>Already have an account? <a href="login.php">Login here</a>.</p>
     </div>
 </body>

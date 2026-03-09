@@ -15,10 +15,20 @@
 </head>
 
 <body>
+    <?php
+        session_start();
+    ?>
     <div class="navbar">
         <a href="../index.php"><img src="../root/assets/icons/sitelogo/logo.png" alt="Student Housing Platform Logo" class="logo"></a>
-        <a href="../listings/listings.php">Listings</a>
-        <a href="../auth/login.php">Login</a>
+        <a href="listings/listings.php">Listings</a>
+        <?php if (isset($_SESSION['user_id'])): ?>
+        <a href="profile.php">
+            <?php echo htmlspecialchars($_SESSION['first_name'] . " " . $_SESSION['last_name']); ?>
+        </a>
+        <a href="auth/logout.php">Logout</a>
+        <?php else: ?>
+        <a href="auth/login.php">Login</a>
+        <?php endif; ?>
     </div>
      <div class="home-image">
         <h1>Oh no! Something went wrong.</h1>
